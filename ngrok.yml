@@ -1,0 +1,6 @@
+authtoken: <your_authtoken>
+version: 2
+tunnels:
+  rdp:
+    proto: tcp
+    addr: 3389

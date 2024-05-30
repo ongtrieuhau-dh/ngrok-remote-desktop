@@ -1,0 +1,15 @@
+<service>
+  <id>remote-desktop-ngrok</id>
+  <name>remote-desktop-ngrok</name>
+  <description>Webservice keep remote desktop loop ngrok</description>
+  <executable>node.exe</executable>
+  <arguments>forever.js ./main.js</arguments>
+  <workingdirectory>%BASE%</workingdirectory>
+  <startmode>Automatic</startmode>
+  <log mode="roll-by-time">
+      <pattern>yyyyMMdd</pattern>
+  </log>
+  <onfailure action="restart" delay="10 sec"/>
+  <onfailure action="restart" delay="20 sec"/>
+  <logpath>%BASE%\service-log</logpath>
+</service>
