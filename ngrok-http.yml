@@ -1,0 +1,6 @@
+authtoken: <your_authtoken>
+version: 2
+tunnels:
+  qrcode:
+    proto: http
+    addr: 80
